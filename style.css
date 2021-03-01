@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto',
+  sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+header {
+  text-align: center;
+}
+
+.OC-project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0;
+}
+
+article {
+  border: .1rem solid mediumpurple;
+  padding: 1rem;
+  border-radius: 2rem;
+  font-size: 1.2rem;
+}
