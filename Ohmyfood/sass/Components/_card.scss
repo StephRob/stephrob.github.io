@@ -1,0 +1,110 @@
+.card {
+  position: relative;
+  width: 100%;
+  margin: 1rem 0;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 30px 0 rgb(0 0 0 / 20%);
+  transition: box-shadow .2s ease;
+
+  &:hover {
+    box-shadow: 0 4px 30px 0 rgb(0 0 0 / 40%);
+  }
+
+  @media screen and (min-width: map-get($breakpoints, tablet-sm)) {
+    width: 48%;
+  }
+
+  &__chip {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    padding: .375rem .625rem;
+    font-weight: 500;
+    color: $color-chip;
+    background-color: $color-chip-background;
+    border-radius: .25rem;
+  }
+
+  &__link {
+    @include flexbox(column);
+    height: 14rem;
+    border-radius: 1.5rem;
+    background-color: $color-card-background;
+    text-decoration: none;
+    color: $color-font-black;
+
+    @media screen and (min-width: map-get($breakpoints, desktop-xl)) {
+      height: 18rem;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 70%;
+    margin: 0;
+
+    img {
+      border-top-right-radius: 1rem;
+      border-top-left-radius: 1rem;
+    }
+  }
+
+  &__description {
+    @include flexbox(column, center);
+    position: relative;
+    height: 30%;
+    padding: .5rem 1rem;
+
+    h3{
+      margin: 0 0 .2rem 0;
+    }
+
+    p{
+      margin: 0;
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    right: 2.7rem;
+    top: 1.25rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+
+    @media screen and (min-width: map-get($breakpoints, desktop-xl)) {
+      top: 2rem;
+    }
+
+    .like-icon {
+      position: absolute;
+
+      &--noLike {
+        opacity: 1;
+        transition: opacity 0.3s ease;
+      }
+
+      &--like {
+        visibility: hidden;
+        opacity: 0;
+        background: linear-gradient(50deg, $color-secondary, $color-primary);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        transition: visibility 0.1s, opacity 0.3s ease;
+      }
+    }
+
+    &:hover {
+      .like-icon--noLike {
+        opacity: 0;
+
+      }
+
+      .like-icon--like {
+        visibility: visible;
+        opacity: 1;
+      }
+
+    }
+  }
+}

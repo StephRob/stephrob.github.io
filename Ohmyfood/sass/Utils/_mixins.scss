@@ -1,0 +1,28 @@
+@mixin flexbox($direction: initial, $justify-content: initial, $align-items: initial, $wrap: initial) {
+  display: flex;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+
+@mixin ellipsis-text {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+@mixin loader-spinner($loader-delay) {
+  animation: loader-spinner .8s ease-in $loader-delay infinite both;
+}
+
+@mixin menu-animation($delay) {
+    animation: menu-appears .5s ease-out $delay both;
+}
+
+@mixin desktop-only {
+  @media screen and (min-width: map-get($breakpoints, desktop)) {
+    max-width: 1230px;
+    margin: auto;
+  }
+}

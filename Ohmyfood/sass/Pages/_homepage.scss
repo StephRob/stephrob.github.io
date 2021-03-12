@@ -1,0 +1,105 @@
+.location {
+  @include flexbox(initial, center, baseline);
+  background-color: $color-location-background;
+
+  &__icon {
+    font-size: large;
+  }
+
+  &__name {
+    font-weight: 600;
+    margin-left: 1rem;
+  }
+}
+
+.presentation {
+  padding: 2rem;
+  text-align: center;
+  background-color: $color-background;
+
+  &__title {
+    margin: 0;
+  }
+
+  a {
+    display: inline-block;
+  }
+}
+
+.steps {
+  padding: $p-container;
+  @include desktop-only;
+
+  &__title {
+    margin: 0;
+  }
+
+  &__order {
+    @include flexbox(initial, space-between, initial, wrap);
+    margin: 2rem 0;
+  }
+
+  .step {
+    @include flexbox(initial, initial, center);
+    position: relative;
+    margin: 0 0 1.5rem .5rem;
+    width: 100%;
+    background-color: $color-background;
+    border-radius: 1.2rem;
+    box-shadow: 0px 2px 10px 0 rgb(0 0 0 / 20%);
+    transition: all .2s ease;
+
+    @media screen and (min-width: map-get($breakpoints, tablet-lg)) {
+      width: 30%;
+    }
+
+    &:hover {
+      background-color: lighten($color-primary, 35%);
+    }
+
+    &:hover .step__icon {
+      color: $color-primary;
+    }
+
+    &__number {
+      @include flexbox(initial, center, center);
+      position: absolute;
+      bottom: 50%;
+      transform: translateY(50%);
+      left: -10px;
+      background-color: $color-primary;
+      color: $color-font-white;
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 50%;
+    }
+
+    &__icon {
+      margin: 0 2rem;
+      font-size: 1.3rem;
+      color: $color-icon-step;
+    }
+
+    &__name {
+      margin: 1.5rem 0;
+      font-weight: bold;
+    }
+  }
+}
+
+.restaurant-section {
+  background-color: $color-background;
+}
+
+.restaurant {
+  padding: $p-container;
+  @include desktop-only;
+
+  &__title {
+    margin: 0;
+  }
+
+  &__cards {
+    @include flexbox(initial, space-between, initial, wrap);
+  }
+}

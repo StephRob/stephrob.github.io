@@ -1,0 +1,22 @@
+.header {
+  position: relative;
+  padding: .5rem;
+  box-shadow: 0px 0px 10px 0 rgb(0 0 0 / 20%);
+
+  &-container {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    @include desktop-only;
+
+    &__return {
+      position: absolute;
+      left: 1.5rem;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: x-large;
+      color: $color-font-black;
+    }
+  }
+
+}
