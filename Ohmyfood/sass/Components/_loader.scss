@@ -1,0 +1,38 @@
+.loader {
+  @include flexbox(column, center, center);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: linear-gradient(310deg, #FF79DA, #9356DC);
+  animation: loader-disappear .1s 3s both;
+
+  &__text {
+    font-size: 3rem;
+    color: $color-font-white;
+  }
+
+  &__spinner {
+    @include flexbox;
+
+    &--point {
+      width: 1rem;
+      height: 1rem;
+      border-radius: 50%;
+      margin: 1rem;
+      background-color: $color-tiertiary;
+    }
+
+    &--point-1 {
+      @include loader-spinner(0s);
+    }
+
+    &--point-2 {
+      @include loader-spinner(.15s);
+    }
+
+    &--point-3 {
+      @include loader-spinner(.3s);
+    }
+  }
+}

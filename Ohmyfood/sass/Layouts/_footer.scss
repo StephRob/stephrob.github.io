@@ -1,0 +1,38 @@
+.footer {
+  background-color: $color-footer-background;
+  color: $color-font-white;
+
+  &__container {
+    padding: $p-container;
+    @include desktop-only;
+
+    @media screen and (min-width: map-get($breakpoints, desktop)) {
+      ul {
+        @include flexbox(initial, space-between);
+      }
+    }
+
+    li {
+      margin-bottom: .3rem;
+    }
+
+    a {
+      color: $color-font-white;
+      transition: .2s;
+
+      &:hover {
+        color: $color-primary;
+      }
+    }
+
+    i {
+      margin-right: .5rem;
+      font-size: small;
+    }
+  }
+
+  &__title {
+    margin: 0 0 1rem 0;
+    font-weight: lighter;
+  }
+}
