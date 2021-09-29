@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- FONT AWESOME ICON -->
+    <script src="https://kit.fontawesome.com/0e479fef98.js" crossorigin="anonymous" defer></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Valège</title>
+    <meta name="description" content="Retrouvez la lingerie Valege sur le site officiel de la marque et achetez en ligne de la lingerie fine et sexy : soutien-gorge, shorty, string, maillot de bain et nuisette">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header-nitce">Livraison offerte en France pour toutes commandes de plus de 60€ !</div>
+        <section class="header-main">
+            <div class="header-main-left">
+                <button type="button" data-bs-toggle="collapse" data-bs-target="#sideCategoriesCollapse" aria-expanded="false" aria-controls="sideCategoriesCollapse">
+                    <i class="fas fa-bars header-main-bars"></i>
+                </button>
+                <a href="/index.html"><img class="header-main-logo" src="assets/img/logo/Valege-Logo.png" alt="Logo Valège"></a>
+            </div>
+            <!-- HEADER NAV-->
+            <nav class="header-nav">
+                <ul class="header-nav-list">
+                    <li class="header-nav-link"><a href="#" class="red">Nouvelle collection</a></li>
+                    <li class="header-nav-link nav-link-hover" data-bs-toggle="collapse" data-bs-target="#subHeaderCollapse" aria-expanded="false" aria-controls="subHeaderCollapse"><a href="#">Lingerie</a></li>
+                    <li class="header-nav-link"><a href="#">Nightwear</a></li>
+                    <li class="header-nav-link"><a href="#">Homme</a></li>
+                    <li class="header-nav-link"><a href="#">My Club</a></li>
+                    <li class="header-nav-link"><a href="#">L'Univers</a></li>
+                </ul>
+            </nav>
+            <!-- HEADER INPUT-->
+            <form action="">
+                <div class="header-search">
+                    <input type="text" placeholder="Rechercher" class="header-search-input">
+                    <img src="assets/img/icon/Magnifying_Glass_Browser.png" alt="magnifying glass icon">
+                </div>
+            </form>
+            <!-- HEADER ICON LIST -->
+            <ul class="header-icon-list">
+                <li class="m-glass" data-bs-toggle="collapse" data-bs-target="#mobileSearchCollapse" aria-expanded="false" aria-controls="mobileSearchCollapse">
+                    <a href="#"><img src="assets/img/icon/Magnifying_Glass_Browser.png" alt="magnifying glass icon"></a>
+                </li>
+                <li><a href="#"><img src="assets/img/icon/heart.png" alt="heart icon"></a></li>
+                <li><a href="#"><img src="assets/img/icon/Messenger_User_Avatar.png" alt="user icon"></a></li>
+                <li><a href="#"><img src="assets/img/icon/Online_Shopping_cart.png" alt="cart icon"></a></li>
+            </ul>
+        </section>
+        <!----- HEADER SUB & SIDE ----->
+        <!-- SEARCH SUBHEADER -->
+        <form action="">
+            <div id="mobileSearchCollapse" class="header-search-mobile collapse">
+                <input type="text" placeholder="Rechercher" class="header-search-input-mobile">
+            </div>
+        </form>
+        <!-- CATEGORIES SUBHEADER -->
+        <section id="subHeaderCollapse" class="header-sub collapse">
+            <div class="header-sub-categories-left">
+                <div class="header-sub-content">
+                    <div class="header-sub-category">
+                        <h4>Soutien-gorges</h4>
+                        <ul>
+                            <a href="#"><li>À armatures</li></a>
+                            <a href="#"><li>Coques fines</li></a>
+                            <a href="#"><li>Bandeaux</li></a>
+                            <a href="#"><li>Push-Up</li></a>
+                            <a href="#"><li>Souples</li></a>
+                            <a href="#"><li class="more">Voir tout</li></a>
+                        </ul>
+                    </div>
+                    <div class="header-sub-category">
+                        <h4>Culottes & Bas</h4>
+                        <ul>
+                            <a href="#"><li>Slips et Culottes</li></a>
+                            <a href="#"><li>String</li></a>
+                            <a href="#"><li>Shortys</li></a>
+                            <a href="#"><li>Tanga</li></a>
+                            <a href="#"><li>Culottes Taille Haute</li></a>
+                            <a href="#"><li class="more">Voir tout</li></a>
+                        </ul>
+                    </div>
+                    <div class="header-sub-category">
+                        <h4>Autres</h4>
+                        <ul>
+                            <a href="#"><li>Bodys</li></a>
+                            <a href="#"><li>Guepiere</li></a>
+                            <a href="#"><li>Porte-jaretelle</li></a>
+                            <a href="#"><li class="more">Voir tout</li></a>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <div class="header-sub-btn">
+                    <button>découvrir toute la sélection</button>
+                </div>
+            </div>
+            <div class="header-sub-categories-right">
+                <img src="assets/img/images/DXrRJ2OXkAAAmo0.png" alt="">
+            </div>
+        </section>
+        <!-- CATEGORIES SIDEHEADER -->
+        <section id="sideCategoriesCollapse" class="header-side-categories collapse collapse-horizontal">
+            <div class="accordion accordion-flush" id="accordion-header">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed red" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            NOUVELLE COLLECTION
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordion-header">
+                        <div class="accordion-body">Prochainement...</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            LINGERIE
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion-header">
+                        <div class="accordion-body">
+                            <div class="accordion accordion-flush" id="subAccordionFlush">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                            Soutien-gorges
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#subAccordionFlush">
+                                        <div class="accordion-body">
+                                            <div class="list-group list-group-flush">
+                                                <button type="button" class="list-group-item list-group-item-action">À armatures</button>
+                                                <button type="button" class="list-group-item list-group-item-action">Coques fines</button>
+                                                <button type="button" class="list-group-item list-group-item-action">Bandeaux</button>
+                                                <button type="button" class="list-group-item list-group-item-action">Push-Up</button>
+                                                <button type="button" class="list-group-item list-group-item-action">Souples</button>
+                                                <button type="button" class="list-group-item list-group-item-action">Voir tout</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                            Culottes & BAs
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#subAccordionFlush">
+                                        <div class="accordion-body">
+                                            <div class="list-group list-group-flush">
+                                                <button type="button" class="list-group-item list-group-item-action">Slips et Culottes</button>
+                                                <button type="button" class="list-group-item list-group-item-action">String</button>
+                                                <button type="button" class="list-group-item list-group-item-action">Shortys</button>
+                                                <button type="button" class="list-group-item list-group-item-action">Tanga</button>
+                                                <button type="button" class="list-group-item list-group-item-action">Culottes Taille Haute</button>
+                                                <button type="button" class="list-group-item list-group-item-action">Voir tout</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                            Autres
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#subAccordionFlush">
+                                        <div class="accordion-body">
+                                            <div class="list-group list-group-flush">
+                                                <button type="button" class="list-group-item list-group-item-action">Bodys</button>
+                                                <button type="button" class="list-group-item list-group-item-action">Guepiere</button>
+                                                <button type="button" class="list-group-item list-group-item-action">Porte-jaretelle</button>
+                                                <button type="button" class="list-group-item list-group-item-action">Voir tout</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            NIGHTWEAR
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordion-header">
+                        <div class="accordion-body">Prochainement...</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            HOMME
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordion-header">
+                        <div class="accordion-body">Prochainement...</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            MY CLUB
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordion-header">
+                        <div class="accordion-body">Prochainement...</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSix">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                            L’UNIVERS
+                        </button>
+                    </h2>
+                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordion-header">
+                        <div class="accordion-body">Prochainement...</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <!-- FULLSLIDE -->
+        <section id="fullSlide-banner" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-banner-caption">
+                <span>Online exclusive</span>
+                <h1>New collection</h1>
+                <button>shop now</button>
+            </div>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#fullSlide-banner" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#fullSlide-banner" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#fullSlide-banner" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/img/images/Intimates_1_2048x.png" class="d-block w-100 slide-1" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/images/Underwear_1_2048x.png" class="d-block w-100 slide-2" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/images/1557837608078_copie.png" class="d-block w-100 slide-3" alt="...">
+                </div>
+            </div>
+        </section>
+
+        <!-- QUOTE -->
+        <section class="quote">
+            <h2>La lingerie sur valège.com</h2>
+            <div></div>
+        </section>
+
+        <!-- CATEGORIES CARDS -->
+        <section class="category">
+            <a href="#">
+                <div class="category-card">
+                    <img src="assets/img/images/flamme-string.png" alt="">
+                    <h3>Ensembles lingerie</h3>
+                </div>
+            </a>
+            <a href="#">
+                <div class="category-card">
+                    <img src="assets/img/images/brooklyn-amande-body.png" alt="">
+                    <h3>Bodys</h3>
+                </div>
+            </a>
+            <a href="#">
+                <div class="category-card">
+                    <img src="assets/img/images/romane-noir-culotte.png" alt="">
+                    <h3>Culottes & bas</h3>
+                </div>
+            </a>
+            <a href="#">
+                <div class="category-card">
+                    <img src="assets/img/images/fascinante-shorty-string-porte-jarretelle.png" alt="">
+                    <h3>Porte Jaretelles & Guêpières</h3>
+                </div>
+            </a>
+        </section>
+    </main>
+
+    <!-- Import JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+    </script>
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

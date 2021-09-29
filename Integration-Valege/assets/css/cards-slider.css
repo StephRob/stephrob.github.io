@@ -1,0 +1,44 @@
+/***** CATEGORIES CARDS *****/
+
+.category {
+  position: relative;
+  margin: 0 10% 30px 10%;
+}
+
+.slick-arrow {
+  border: none;
+  background-color: transparent;
+}
+
+.slick-next {
+  position: absolute;
+  top: 50%;
+  left: -40px;
+  transform: translateY(-50%);
+}
+
+.slick-prev {
+  position: absolute;
+  top: 50%;
+  right: -40px;
+  transform: translateY(-50%);
+}
+
+.category-card {
+  margin: 0 14px;
+}
+
+.category-card img {
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.category-card h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2.8px;
+  color: #444444;
+}
