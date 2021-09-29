@@ -1,0 +1,9 @@
+/***** GOOGLE FONTS *****/
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;600;700&family=Roboto:wght@400;700&display=swap');
+/***** IMPORTS CSS *****/
+@import 'base.css';
+@import 'header.css';
+@import 'fullslide.css';
+@import 'quote.css';
+@import 'cards-slider.css';
+@import 'media-queries.css';

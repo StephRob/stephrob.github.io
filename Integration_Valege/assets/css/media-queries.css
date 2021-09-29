@@ -1,0 +1,165 @@
+/********** screen and (min-width: 1425px) ***********/
+
+
+@media screen and (min-width: 1425px) {
+  .header-side-categories {
+    display: none;
+  }
+}
+
+/********** screen and (max-width: 1425px) ***********/
+
+@media screen and (max-width: 1425px) {
+
+  /***** HEADER *****/
+  .header-main {
+    height: auto;
+  }
+
+  .header-main-left {
+    margin-right: 0;
+  }
+
+  .header-main-bars {
+    display: block;
+  }
+
+  .header-main-logo {
+    height: 90px;
+  }
+
+  .header-nav,
+  .header-sub {
+    display: none;
+  }
+
+  .header-search {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .header-search-input {
+    width: 300px;
+  }
+
+  /***** FULLSLIUDE *****/
+
+  .carousel-item img {
+    height: calc(100vh - 145px);
+  }
+}
+
+/********** screen and (max-width: 1040px) ***********/
+
+@media screen and (max-width: 1040px) {
+
+  /***** HEADER *****/
+  
+  .header-main {
+    padding: 0 30px;
+  }
+
+  /***** FULLSLIUDE *****/
+
+  .slide-3 {
+    object-position: 25%;
+  }
+
+}
+
+/********** screen and (min-width: 760px) ***********/
+
+@media screen and (min-width: 760px) {
+  .header-search-mobile {
+    display: none;
+  }
+}
+
+/********** screen and (max-width: 760px) ***********/
+
+@media screen and (max-width: 760px) {
+
+  /***** HEADER *****/
+
+  .header-nitce {
+    height: 40px;
+    font-size: 14px;
+    line-height: 1.2;
+    padding: 0 30px;
+  }
+
+  .header-search-input {
+    display: none;
+  }
+
+  .header-main-logo {
+    height: 70px;
+  }
+
+  .m-glass {
+    display: block;
+  }
+
+  .header-side-categories {
+    width: 50%;
+    min-height: calc(100vh - 115px);
+  }
+
+  .carousel-item img {
+    height: calc(100vh - 115px);
+  }
+
+  .carousel-banner-caption h1 {
+    font-size: 50px;
+  }
+
+  /***** QUOTE *****/
+
+  .quote {
+    padding: 0 30px;
+  }
+
+  .quote h2 {
+    font-size: 25px;
+    line-height: 1.2;
+  }
+}
+
+/********** screen and (max-width: 500px) ***********/
+
+@media screen and (max-width: 500px) {
+
+  /***** HEADER *****/
+
+  .header-side-categories {
+    width: 100%;
+  }
+
+  /***** FULLSLIUDE *****/
+
+  .carousel-banner-caption h1 {
+    font-size: 40px;
+    letter-spacing: 3.4px;
+  }
+
+  /***** QUOTE *****/
+
+  .quote h2 {
+    margin-top: 50px;
+    letter-spacing: 4.5px;
+  }
+
+  .quote div {
+    margin-bottom: 50px;
+  }
+
+  /***** CATEGORIES CARDS *****/
+
+  .slick-next {
+    left: -25px;
+  }
+
+  .slick-prev {
+    right: -25px;
+  }
+}
